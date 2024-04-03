@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS</title>
+    <!-- FONT EB GARMOND+ VOLKRON-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Underdog&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <h1>FV</h1>
+        <ul>
+          <li>
+            <a href="#home.html" onclick="scrollToSection('home')">Home</a>
+          </li>
+          <li>
+            <a href="#profil.html" onclick="scrollToSection('profil')"
+              >Profil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tentang-saya.html"
+              onclick="scrollToSection('tentang-saya')"
+              >Tentang Saya</a
+            >
+          </li>
+          <li>
+            <a
+              href="#jadwal-perkuliahan.html"
+              onclick="scrollToSection('jadwal-perkuliahan')"
+              >Jadwal Perkuliahan</a
+            >
+          </li>
+          <li>
+            <a href="#hobi.html" onclick="scrollToSection('hobi')">Hobi</a>
+          </li>
+          <li>
+            <a href="#pendaftaran.html" onclick="scrollToSection('pendaftaran')"
+              >Pendaftaran</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home / Intro -->
+    <main>
+      <div class="container-bg1" id="home">
+        <section class="home">
+          <div class="overlay">
+            <h1>Selamat Datang di Website FV</h1>
+            <h2>Fadhil Vidiarta</h2>
+          </div>
+          <img src="img/wow1.jpg" alt="bg home" />
+        </section>
+      </div>
+
+      <!-- Profil Saya -->
+      <section class="profil" id="profil">
+        <div class="container-profile">
+          <div class="info">
+            <h2>PROFIL</h2>
+            <img src="img/user.jpg" alt="user profil" />
+            <p>Nama: Fadhil Vidiarta</p>
+            <p>Umur: 19 tahun</p>
+            <p>Status: Mahasiswa Aktif</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tentang Saya -->
+      <section class="tentang-saya" id="tentang-saya">
+        <div class="container-bg3">
+          <div class="content">
+            <img src="img/codingan1.jpg"Foto Profil Anda" />
+            <div class="deskripsi">
+              <h2>TENTANG SAYA</h2>
+              <p>
+                Saya adalah seorang mahasiswa yang sedang kuliah di Politeknik
+                Negeri Madiun yang belajar tentang pengembangan web. Saya
+                tertarik dengan pemrograman dan teknologi, dan saya selalu
+                mencoba untuk belajar hal-hal baru. Selain itu, saya juga senang
+                melakukan olahraga khususnya lari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Jadwal Perkuliahan  -->
+      <section class="jadwal-perkuliahan" id="jadwal-perkuliahan">
+        <h2>JADWAL PERKULIAHAN</h2>
+        <table>
+          <tr>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Mata Kuliah</th>
+            <th>Dosen Pengampu</th>
+          </tr>
+          <tr>
+            <td>Senin</td>
+            <td>07:00 - 14:25 (Teori + Praktikum)</td>
+            <td>Pemrograman Berbasis Objek</td>
+            <td>Tri Lestariningsih, S.Kom., M.kom.</td>
+          </tr>
+          <tr>
+            <td>Selasa</td>
+            <td>07:00 - 14:25 (Teori + Praktikum)</td>
+            <td>Pemrograman Mobile 1</td>
+            <td>Angger Binuko Paksi, M.Kom.</td>
+          </tr>
+          <tr>
+            <td>Rabu</td>
+            <td>13:00 - 17:00 (Teori + Praktikum)</td>
+            <td>Pemrograman Web</td>
+            <td>>Gus Nanang Syaifuddiin, S.Kom., M.Kom.</td>
+          </tr>
+          <tr>
+            <td>Kamis</td>
+            <td>12:45 - 16:30 (Teori + Praktikum)</td>
+            <td>Sistem Operasi</td>
+            <td>Muhammad Syaeful Fajar, S.pd., M.Kom.</td>
+          </tr>
+          <tr>
+            <td>Jumat</td>
+            <td>07:00 - 09:30</td>
+            <td>Agama Islam</td>
+            <td>Dr. Nanik Nurhayati, S.Ag., M.Pd.</td>
+          </tr>
+          <tr>
+            <td>Jumat</td>
+            <td>09:45 - 11:025</td>
+            <td>Manajemen Resiko Proyek</td>
+            <td>Nisa'ul Hafidhoh, M.T.</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- hobi -->
+      <section id="hobi" class="container-hobi">
+        <h2>HOBI</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="img/codingan 2.jpeg" alt="Coding" />
+            <h3>Coding</h3>
+            <p>
+              Saya suka menghabiskan waktu untuk coding dan menciptakan sesuatu
+              yang baru. Saya senang belajar tentang berbagai bahasa pemrograman
+              dan teknologi baru. Coding bagi saya adalah cara yang bagus untuk
+              melatih otak dan bersenang-senang.
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/game.jpeg" alt="Main Game" />
+            <h3>Main Game</h3>
+            <p>
+              Saya suka bermain game, terutama game strategi dan RPG. Game bagi
+              saya adalah cara yang bagus untuk bersantai dan melepas lelah
+              setelah seharian beraktivitas. Saya juga suka bermain game bersama
+              teman-teman.
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/lari.jpeg" alt="Lari" />
+            <h3>Lari</h3>
+            <p>
+              Saya suka berlari di pagi hari. Berlari bagi saya adalah cara yang
+              bagus untuk menjaga kesehatan dan kebugaran tubuh. Berlari juga
+              membantu saya untuk menenangkan pikiran dan fokus pada hal-hal
+              yang penting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- pendaftaran -->
+      <section id="pendaftaran" class="container-daftar">
+        <h2>Pendaftaran</h2>
+        <div class="isi-daftar">
+          <h2>Pendaftaran</h2>
+          <form>
+            <label for="nama">Nama:</label><br />
+            <input type="text" id="nama" name="nama" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+     <!-- footer -->
+    <footer  id="footer">
+      <p class="copyright">© 2024 Hak Cipta Fadhil Vidiarta - NIM 233307047</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
